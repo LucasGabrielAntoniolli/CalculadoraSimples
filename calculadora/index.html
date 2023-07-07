@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./main.js" defer></script>
+    <title>Calculadora</title>
+</head>
+<body>
+    <div id="fundo">
+        <div id="tudo">
+            <li class="display" id="liOne"></li>
+            <div class="display">  
+                <li class="li" id="liTwo"></li>
+                <button onclick="useCalc()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 48 48"><mask id="ipTRightTwo0"><path stroke="rgb(123 123 123)" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="m24 43l18-19L24 5v12H6v14h18v12Z"/></mask><path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTRightTwo0)"/></svg>
+                </button>
+                <li class="li" id="liThree"></li>
+            </div>
+            <div id="btsLimpar">
+                <button onclick="remove()">Limpar Tudo</button>
+                <button onclick="deleta()">Limpar</button>
+            </div>
+            <div id="calculadora">
+                <table>
+                    <tr>
+                        <td onclick="addNumber(7)">7</td>
+                        <td onclick="addNumber(8)">8</td>
+                        <td onclick="addNumber(9)">9</td>
+                        <td onclick="addSinal('/')">:</td>
+                    </tr>
+                    <tr>
+                        <td onclick="addNumber(4)">4</td>
+                        <td onclick="addNumber(5)">5</td>
+                        <td onclick="addNumber(6)">6</td>
+                        <td onclick="addSinal('*')">X</td>
+                    </tr>
+                    <tr>
+                        <td onclick="addNumber(1)">1</td>
+                        <td onclick="addNumber(2)">2</td>
+                        <td onclick="addNumber(3)">3</td>
+                        <td onclick="addSinal('-')">-</td>
+                    </tr>
+                    <tr>
+                        <td onclick="addNumber('.')">,</td>
+                        <td onclick="addNumber(0)">0</td>
+                        <td onclick="calcPrint()">=</td>
+                        <td onclick="addSinal('+')">+</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="autor">
+                <a href="https://github.com/lucasgabrielantoniolli">Lucas Gabriel Antoniolli</a>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+   
+</style>
+</html>

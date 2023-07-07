@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    user-select: none;
+}
+
+html, body, #fundo {
+    width: 100%;
+    height: 100%;
+}
+
+#fundo {
+    background-color: rgb(185, 185, 185);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#tudo {
+    background-color: rgb(210, 210, 210);
+    width: 30%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#tudo td {
+    background-color: rgb(195, 195, 195);
+    height: 60px;
+    width: 90px;
+    text-align: center;
+    font-size: x-large;
+}
+
+#tudo .li {
+    list-style: none;
+    width: 40%;
+}
+
+#tudo .display {
+    text-align: center;
+    border: solid 2px rgb(177, 177, 177);
+    height: 60px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: x-large;
+}
+
+#tudo .display button {
+    background-color: transparent;
+    border: none;
+}
+
+#btsLimpar {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+    padding: 0%;
+}
+
+#btsLimpar button {
+    border: 1px solid black;
+    padding: 5px;
+    width: 90px;
+    text-align: center;
+}
